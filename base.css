@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    background-color: rgb(249, 230, 249);
+
+}
+
+#content {
+
+    width: 100%;
+    height: 590px;
+    background-color: white;
+}
+
+#op {
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+.btn {
+    margin: 10px 70px;
+    width: 70px;
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgb(222, 221, 223);
+
+
+
+}
+
+.btn:hover {
+    background-color: rgb(241, 202, 242);
+    color: white;
+}
+
+input {
+    width: 500px;
+    height: 35px;
+    font-size: large;
+    outline: none;
+    border-radius: 3px;
+    padding: 4px 20px;
+    border: 0;
+
+}
