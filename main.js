@@ -22,7 +22,7 @@ function y() {
     return y;
 }
 function f_speed() {
-    var s = Math.random() * 100 + 1;
+    var s = Math.random() * 10000 + 5000;
     return s;
 }
 
@@ -41,19 +41,11 @@ $(document).ready(function () {
         span.setAttribute('speed', f_speed());
         $("#content").append(span);
 
-
+        var s = parseInt(span.getAttribute('speed'));
+        $(span).animate({ left: -100 + '%' }, s);
+        $("#t").val("");
     });
 
-    setInterval(f_move, 500);
-    function f_move() {
-        var spans = $("#content").children();
-
-        for (var i = 0; i < spans.length; i++) {
-            if (parseInt(spans[i].style.right) < 2000) {
-                spans[i].style.right = parseInt(spans[i].style.right) + parseInt(spans[i].getAttribute('speed')) + 'px';
-            }
-        }
-    }
 
     $("#clear").click(function () {
         $("#content").empty();
